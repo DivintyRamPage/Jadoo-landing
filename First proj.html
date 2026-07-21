@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="Firstproj.css">
-    <link rel="stylesheet" href="signin.css">
+    <link rel="stylesheet" href="sign-in-log-in.css">
 </head>
 <body>
     
@@ -20,8 +20,27 @@
         <button class="js-btn-sign-up">Sign up</button>
         <a href="#">Sign in</a>
     </form>
-    
 </div>
+
+
+<div class="log-in-window js-login-window">
+    <button class="close-btn-login js-login-close">&times;</button>
+    <div class="modal-content">
+        <h2>Welcome Back!</h2>
+        <p class="modal-subtitle">Enter your details to access your account</p>
+        <form id="login-form">
+            <div class="input-group">   
+                <input type="email" placeholder="Email address" class="input-signup" required>
+            </div>
+            <div class="input-group">
+                <input type="password" placeholder="Password" class="input-signup" required>
+            </div>
+            <button type="submit" class="js-btn-signup submit-btn">Sign in</button>
+        </form>
+    </div>
+</div>
+    
+
 <div class="hero">
 <header class="site-header">
   <div class="logo">Jadoo</div>
@@ -31,7 +50,7 @@
     <a href="#">Hotels</a>
     <a href="#">Flights</a>
     <a href="#">Bookings</a>
-    <a href="#">Login</a>
+    <a href="#" class="btn-login">Login</a>
     <a href="#" class="btn-signup">Sign up</a>
     <a href="#">EN</a>
   </nav>
