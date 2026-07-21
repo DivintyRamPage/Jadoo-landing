@@ -1,0 +1,104 @@
+
+.sign-up-window {
+  position: relative;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  padding: 40px;
+  border-radius: 20px;
+  background-color: rgba(79, 70, 229, 0.3); 
+  backdrop-filter: blur(20px); 
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+
+  color: white;
+  text-align: center;
+}
+
+
+.sign-up-window h2 {
+  margin-bottom: 25px;
+  font-size: 2em;
+  color: white; 
+}
+
+
+
+
+
+.sign-up-window input {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 15px;
+  
+
+  background: rgba(255, 255, 255, 0.8); 
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  box-sizing: border-box;
+  
+  /* Текст в інпуті */
+  color: #333;
+  font-size: 1em;
+}
+
+/* 4. Стиль кнопки (Button - робимо її синьою як на фото) */
+.js-btn-sign-up{
+  width: 100%;
+  padding: 15px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  
+  /* Синій колір кнопки з фото */
+  background-color: #3b82f6; 
+  border: none;
+  border-radius: 10px;
+  
+  /* Текст кнопки */
+  color: white;
+  font-size: 1.1em;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.js-btn-sign-up:hover {
+  background-color: #2563eb; /* Темніший синій при наведенні */
+}
+
+/* 5. Стиль посилання "Sign In" */
+.sign-up-window a {
+  display: block;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.7); /* Світлий колір тексту */
+  text-decoration: none;
+  font-size: 0.9em;
+}
+
+.sign-up-window{
+    display: none;
+}
+.sign-up-window-visible{
+    display: block;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  z-index: 10;
+  
+  /* --- ДОДАЙТЕ ЦІ РЯДКИ, ЩОБ ПРИБРАТИ ШИРИНУ --- */
+  padding: 0;      /* Прибираємо внутрішні відступи, які розтягують кнопку */
+  line-height: 1;  /* Вирівнюємо висоту рядка по символу */
+  width: auto;     /* Скасовуємо будь-яку фіксовану ширину */
+  height: auto;    /* Скасовуємо будь-яку фіксовану висоту */
+}
+
