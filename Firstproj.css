@@ -298,19 +298,19 @@
     background-size: auto;
     background-repeat: no-repeat;
 }
-/* Стилі для картинки з літаком у другій картці */
+
 .secondoff img {
-  height: 150px;          /* Збільшуємо висоту, щоб сам літак став великим */
+  height: 150px;         
   width: auto;
-  margin-top: -30px;      /* Підтягуємо картинку вгору, перекриваючи пусте поле зверху */
-  margin-bottom: -45px;   /* ОЦЕ НАЙГОЛОВНІШЕ: сильно підрізаємо поле знизу, щоб текст встав на місце */
-  object-fit: contain;    /* Щоб картинка не стискалася і не деформувалася */
+  margin-top: -30px;     
+  margin-bottom: -45px;   
+  object-fit: contain;    
 }
 
-/* Налаштування заголовка "Best Flights" */
+
 .h2 h4 {
-  margin-top: 30px;          /* Обнуляємо верхній марджин */
-  margin-bottom: 8px;     /* Однаковий відступ до тексту знизу, як і в інших картках */
+  margin-top: 30px;          
+  margin-bottom: 8px;     
 }
 .firstoff:hover{
   transition: 0.3s;
@@ -343,10 +343,9 @@
 .Destinations {
     width: 314px;
     height: 457px;
-    /* Оце перетворює картку на "базу" для абсолютної наклейки */
     position: relative; 
     border-radius: 20px;
-    overflow: hidden; /* Обрізає все зайве */
+    overflow: hidden; 
     flex-shrink: 0;
 }
 .Destinations:hover{
@@ -567,7 +566,7 @@
     background: rgb(255, 255, 255);
     padding: 30px;
     border-radius: 20px;
-    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05); /* Легка тінь */
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05); 
     width: 504px;
     height: 245px;
     text-align: left;
@@ -601,7 +600,7 @@
 }
 
 .dot.active {
-    background-color: #F7A582; /* Твій акцентний колір */
+    background-color: #F7A582; 
 }
 .block5{
   display: flex;
@@ -697,7 +696,7 @@
 .newsletter {
   padding: 80px 20px;
   text-align: center;
-  background-color: #f7f7f7; /* Світлий фон */
+  background-color: #f7f7f7; 
 }
 .newsletter-content{
   width: 1170px;
@@ -737,7 +736,7 @@
   padding: 15px 40px;
   border: none;
   border-radius: 10px;
-  background-color: #df6951; /* Твій помаранчевий колір */
+  background-color: #df6951; 
   color: white;
   font-weight: bold;
   cursor: pointer;
@@ -774,21 +773,21 @@
   flex-direction: column;
   align-items: flex-start;
 }
-/* Видали старі .footer-column і встав це */
+
 .footer-column {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; /* Центрує список і заголовок по горизонталі */
-    text-align: left;  /* Центрує текст всередині блоків */
+    align-items: flex-start; 
+    text-align: left;  
     padding: 0;
 }
 
 .footer-column ul {
-    padding: 0;          /* Обов'язково: прибирає відступ списку зліва */
-    list-style: none;    /* Прибирає крапки */
+    padding: 0;          
+    list-style: none;    
 }
 
-/* Переконайся, що лінки не мають власного вирівнювання */
+
 .footer-column a {
     display: block;
     text-decoration: none;
