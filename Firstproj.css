@@ -571,7 +571,7 @@
     height: 245px;
     text-align: left;
     box-sizing: border-box;
-    z-index: 1;
+
 }
 
 
@@ -580,12 +580,11 @@
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  margin-bottom: 15px;
-  transform: translateY(50px);
-  z-index: 3;
+  right: 50px;
+  bottom: 50px;
 }
 
-/* Кружечки (індикатори) */
+
 .dots-container {
     display: flex;
     gap: 12px;
@@ -615,7 +614,7 @@
   font-weight: bold;
 }
 .te{
-  transform: translateX(34px)
+  margin-top: -50px;
 }
 .q{
   transform: translateY(50px);
@@ -623,16 +622,19 @@
 .quote{
   font-size: 16px;
   color: rgb(100, 91, 118);
+
 }
 .name1{
   font-size: 18px;
   color: rgb(100, 91, 118);
   font-weight: 400;
+  margin-top: -10px;
 }
 .location{
   transform: translateY(-10px);
   font-size: 14px;
   color: rgb(100, 91, 118);
+  
 }
 .te2{
   transform: translateX(34px)
@@ -654,17 +656,46 @@
   font-size: 14px;
   color: rgb(100, 91, 118);
 }
-
-
-
-.testimonial-card2 {
-    margin-top: -180px;
-    z-index: 1;
-    transform: scale(0.95);
+.test-arrows {
+  position: absolute;
+  right: -50px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
-.testimonial-card{
-  z-index: 2;
-  position: relative;
+
+.test-arrows button{
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: #7b7b7b;
+  transition: color 0.2s;
+}
+
+.test-arrows button:hover {
+  color: #df6951;
+}
+
+.rev {
+    position: relative;
+}
+
+.test-arrows {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.test-arrows button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 20px;
 }
 .block5{
   margin-left: 90px;
