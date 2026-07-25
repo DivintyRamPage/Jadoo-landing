@@ -206,3 +206,89 @@
 }
 
 
+@media (max-width: 480px) {
+  .sign-up-window,
+  .log-in-window {
+    width: 85vw;
+    max-width: 350px;
+    padding: 25px;
+    max-height: 90vh;
+    overflow-y: auto;
+  }
+
+  .sign-up-window h2,
+  .log-in-window h2 {
+    font-size: 1.5em;
+  }
+
+  .close-btn,
+  .close-btn-login {
+    top: 8px;
+    left: 8px;
+  }
+}
+
+@media (max-width: 900px) {
+  .k {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .block5 {
+    margin-left: 0;
+    text-align: center;
+    align-items: center;
+  }
+
+  .testimonial-card, .testimonial-card2 {
+    width: 90vw;
+    max-width: 450px;
+    height: auto;
+    margin-left: 0;
+  }
+
+  .test-arrows {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-card, .testimonial-card2 {
+    padding: 20px;
+  }
+
+  .quote, .quote2 {
+    font-size: 14px;
+  }
+
+  .avatar {
+    right: 0;
+    bottom: 0;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 900px) {
+
+
+  .avatar {
+    position: absolute;
+    top: -20px;
+    left: -10px;
+    right: auto;
+    bottom: auto;
+    margin: 0;
+  }
+
+  /* скидаємо десктопні зсуви тексту, які були підігнані під старе положення аватара */
+  .te, .te2 {
+    margin-top: 0;
+    transform: none;
+  }
+
+  .q, .q2 {
+    transform: none;
+  }
+}

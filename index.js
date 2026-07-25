@@ -1,3 +1,53 @@
+
+document.addEventListener('DOMContentLoaded', function () {
+  const burger = document.querySelector('.burger');
+  const headerTop = document.querySelector('.header-top');
+
+  if (!burger || !headerTop) return;
+
+  
+  const overlay = document.createElement('div');
+  overlay.classList.add('menu-overlay');
+  document.body.appendChild(overlay);
+
+  function openMenu() {
+    burger.classList.add('active');
+    headerTop.classList.add('menu-open');
+    overlay.classList.add('active');
+    document.body.classList.add('menu-open');
+  }
+
+  function closeMenu() {
+    burger.classList.remove('active');
+    headerTop.classList.remove('menu-open');
+    overlay.classList.remove('active');
+    document.body.classList.remove('menu-open');
+  }
+
+  function toggleMenu(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    const isOpen = headerTop.classList.contains('menu-open');
+    isOpen ? closeMenu() : openMenu();
+  }
+
+ 
+  burger.addEventListener('click', toggleMenu);
+
+
+  overlay.addEventListener('click', closeMenu);
+
+  headerTop.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', closeMenu);
+  });
+
+  window.addEventListener('resize', function () {
+    if (window.innerWidth > 1200) {
+      closeMenu();
+    }
+  });
+});
+
 const signUp = document.querySelector('.btn-signup');
 const signUpWindow = document.querySelector('.js-sign-up-window');
 signUp.addEventListener('click', () => {
@@ -87,4 +137,22 @@ document.addEventListener("DOMContentLoaded", () => {
         currentIndex = (currentIndex - 1 + testimonialsData.length) % testimonialsData.length;
         renderTestimonial(currentIndex);
     });
+});
+
+const romeHide = document.querySelector('.Greece')
+const romeUnHide = document.querySelector('.ic')
+const romeUnHideHeart = document.querySelector('.heart')
+const romeVisible = document.querySelector('.Rome')
+
+romeUnHideHeart.addEventListener('click', () => {
+    romeVisible.classList.remove('js-rome-visible')
+})
+document.addEventListener('click', (a) => {
+    const isVisible = !romeVisible.classList.contains('js-rome-visible');
+    const clickedInsideRome = romeVisible.contains(a.target);
+    const clickedOnHeart = romeUnHideHeart.contains(a.target);
+
+    if (isVisible && !clickedInsideRome && !clickedOnHeart) {
+        romeVisible.classList.add('js-rome-visible');
+    }
 });
