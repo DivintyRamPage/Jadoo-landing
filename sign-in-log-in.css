@@ -101,7 +101,7 @@
 }
 
 
-/*-------------------------------------------------*/
+
 
 
 .log-in-window {
@@ -209,7 +209,7 @@
 @media (max-width: 480px) {
   .sign-up-window,
   .log-in-window {
-    width: 85vw;
+    width: 75vw;
     max-width: 350px;
     padding: 25px;
     max-height: 90vh;
@@ -255,21 +255,7 @@
   }
 }
 
-@media (max-width: 480px) {
-  .testimonial-card, .testimonial-card2 {
-    padding: 20px;
-  }
 
-  .quote, .quote2 {
-    font-size: 14px;
-  }
-
-  .avatar {
-    right: 0;
-    bottom: 0;
-    margin-bottom: 10px;
-  }
-}
 @media (max-width: 900px) {
 
 
@@ -281,8 +267,6 @@
     bottom: auto;
     margin: 0;
   }
-
-  /* скидаємо десктопні зсуви тексту, які були підігнані під старе положення аватара */
   .te, .te2 {
     margin-top: 0;
     transform: none;
