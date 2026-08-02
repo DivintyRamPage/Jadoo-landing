@@ -156,3 +156,20 @@ document.addEventListener('click', (a) => {
         romeVisible.classList.add('js-rome-visible');
     }
 });
+
+const scrollToTop = document.querySelector('.scroll-top-btn')
+
+window.addEventListener('scroll', () => {
+    if (window.scrollY>300) {
+        scrollToTop.classList.add('scroll-top-btn-display')
+    } else {
+        scrollToTop.classList.remove('scroll-top-btn-display')
+    }
+});
+
+scrollToTop.addEventListener('click', () => {
+    window.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+    });
+});
